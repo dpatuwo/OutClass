@@ -1,5 +1,6 @@
 package edu.vt.vthacks.outclass;
 
+import android.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -16,7 +17,7 @@ public class MainActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Parse.initialize(this, "OYugFg9KyTgg2RwnV2v8pHgYa0eUClG05YPqOOp3", "GhL4mJVwtKnodiUSUMlSpCH08rCmOelMJpX9wa4S");
-      
+
     }
 
 
@@ -26,8 +27,8 @@ public class MainActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-        
-        
+
+
     }
 
 }
