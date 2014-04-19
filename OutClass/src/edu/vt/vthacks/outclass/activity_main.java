@@ -2,7 +2,11 @@ package edu.vt.vthacks.outclass;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class activity_main
+public class activity_main extends Activity
 {
-
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 }
