@@ -7,7 +7,7 @@ public class User implements IUser {
 	private String identity;
 	private String name;
 	ParseObject user;
-	public void User()
+	public User()
 	{
 		user = new ParseObject("User");
 	}
