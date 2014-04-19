@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name_field"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:hint="Name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/begin_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:onClick="begin"
+        android:layout_marginLeft="100dp" />
+
+    <ImageView
+        android:layout_width="279dp"
+        android:layout_height="271dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/Logo_OutClass" />
+
+</FrameLayout>
