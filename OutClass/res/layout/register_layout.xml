@@ -28,6 +28,6 @@
         android:layout_height="271dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/Logo_OutClass" />
+        android:src="@drawable/logo_outclass" />
 
 </FrameLayout>
