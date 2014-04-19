@@ -8,4 +8,61 @@
     android:paddingTop="16dp"
     tools:context=".MainActivity" >
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Scheduled Group"
+        android:id="@+id/view_schedule_button"
+        android:layout_below="@+id/create_group_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Study Group"
+        android:id="@+id/create_group_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Groups"
+        android:id="@+id/your_groups_button"
+        android:layout_below="@+id/view_schedule_button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/settings_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_preferences" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/help_button"
+        android:layout_alignBottom="@+id/settings_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_menu_help" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_outclass"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/create_group_button"
+        android:layout_alignRight="@+id/settings_button"
+        android:layout_alignEnd="@+id/settings_button" />
+
 </RelativeLayout>
