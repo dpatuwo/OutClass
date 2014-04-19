@@ -52,4 +52,19 @@ public class User implements IUser {
 		
 		user.save();
 	}
+	public ParseObject getParseObjectFromID(String identity)
+	{
+		ParseQuery<ParseObject> query = ParseQuery.getQuery("User");
+		try
+		{
+			query.whereEqualTo("identifier", identity);
+			return ((ParseObject)query.getFirst());
+		} catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		return null;
+	}
+	
+	
 }

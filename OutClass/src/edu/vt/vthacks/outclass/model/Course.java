@@ -1,5 +1,8 @@
 package edu.vt.vthacks.outclass.model;
 
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
 public class Course implements ICourse{
 
 	private String cSubject;
@@ -46,5 +49,17 @@ public class Course implements ICourse{
 	public int getCRN() {
 		return cCRN;
 	}
-
+	public ParseObject getParseObjectFromCRN(String crn)
+	{
+		ParseQuery<ParseObject> query = ParseQuery.getQuery("Courses");
+		try
+		{
+			query.whereEqualTo("crn", crn);
+			return ((ParseObject)query.getFirst());
+		} catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		return null;
+	}
 }
