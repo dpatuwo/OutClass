@@ -1,5 +1,6 @@
 package edu.vt.vthacks.outclass.model;
 
+import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
@@ -43,5 +44,12 @@ public class User implements IUser {
 			System.out.println(e.getMessage());
 		}
 		return false;
+	}
+	public void create(String identifier, String name) throws ParseException
+	{
+		user.put("identifier", identifier);
+		user.put("name", name);
+		
+		user.save();
 	}
 }

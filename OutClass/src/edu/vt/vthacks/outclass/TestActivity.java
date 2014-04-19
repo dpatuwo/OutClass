@@ -29,13 +29,22 @@ public class TestActivity extends Activity {
 	        setContentView(R.layout.activity_test);
 		  Parse.initialize(this, "OYugFg9KyTgg2RwnV2v8pHgYa0eUClG05YPqOOp3", "GhL4mJVwtKnodiUSUMlSpCH08rCmOelMJpX9wa4S");
 		  User user = new User();
-		  if(user.userExists("tellmethisdoesn'texist"))
+		  
+		  if(user.userExists("tellmethisdoesn'texis"))
 		  {
 			  System.out.println("user exists");
 		  }
 		  else
 		  {
 			  System.out.println("user does not exist");
+			  try
+			  {
+				  user.create("tellmethisdoesn'texis", "John Doe");
+			  } catch(Exception e)
+			  {
+				System.out.println(e.getMessage());  
+			  }
+			  
 		  }
 	}
 }
