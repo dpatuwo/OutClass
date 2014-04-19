@@ -12,9 +12,31 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int logo_outclass=0x7f020001;
+    }
+    public static final class id {
+        public static final int add_class_button=0x7f060009;
+        public static final int begin_button=0x7f06000c;
+        public static final int class_listview=0x7f060008;
+        public static final int classes_label=0x7f060007;
+        public static final int create_group_button=0x7f060001;
+        public static final int crn_edittext=0x7f060006;
+        public static final int done_button=0x7f06000a;
+        public static final int help_button=0x7f060004;
+        public static final int imageView=0x7f060005;
+        public static final int name_field=0x7f06000b;
+        public static final int settings_button=0x7f060003;
+        public static final int view_schedule_button=0x7f060000;
+        public static final int your_groups_button=0x7f060002;
+    }
+    public static final class layout {
+        public static final int activity_main=0x7f030000;
+        public static final int add_class_layout=0x7f030001;
+        public static final int create_group_layout=0x7f030002;
+        public static final int register_layout=0x7f030003;
     }
     public static final class string {
-        public static final int app_name=0x7f030000;
+        public static final int app_name=0x7f040000;
     }
     public static final class style {
         /** 
@@ -38,10 +60,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040000;
+        public static final int AppBaseTheme=0x7f050000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040001;
+        public static final int AppTheme=0x7f050001;
     }
 }
