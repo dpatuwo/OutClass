@@ -47,11 +47,6 @@ public class YourGroupsActivity extends Activity
         });
     }
 
-    public void info(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Group Info").setMessage("TEST HERE").show();
-    }
-
     private class GroupAdapter extends ArrayAdapter<GroupDetail> {
         private static final int LAYOUT = R.layout.two_line_list_item;
 

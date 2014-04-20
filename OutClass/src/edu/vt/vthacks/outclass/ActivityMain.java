@@ -12,8 +12,6 @@ public class ActivityMain extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Parse.initialize(this, "OYugFg9KyTgg2RwnV2v8pHgYa0eUClG05YPqOOp3", "GhL4mJVwtKnodiUSUMlSpCH08rCmOelMJpX9wa4S");
-
     }
 
     public void createGroup(View view) {
@@ -28,6 +26,11 @@ public class ActivityMain extends Activity
 
     public void yourGroups(View view) {
         Intent intent = new Intent(this, YourGroupsActivity.class);
+        startActivity(intent);
+    }
+
+    public void addClass(View view) {
+        Intent intent = new Intent(this, AddClassActivity.class);
         startActivity(intent);
     }
 }

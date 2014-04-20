@@ -9,6 +9,25 @@ public class Course implements ICourse{
 	private int cNumber;
 	private String cTitle;
 	private int cCRN;
+
+	public boolean courseExists(String crn)
+    {
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Courses");
+        try
+        {
+            query.whereEqualTo("crn", crn);
+            if(query.getFirst() == null)
+            {
+                return false;
+            }
+            return true;
+        } catch(Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+        return false;
+    }
+
 	@Override
 	public void setSubject(String subject) {
 		cSubject = subject;

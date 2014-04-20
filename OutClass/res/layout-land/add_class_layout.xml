@@ -35,21 +35,11 @@
         android:layout_marginBottom="75dp"
         android:layout_marginRight="15dp" />
 
-    <ListView
-        android:layout_width="299dp"
-        android:layout_height="237dp"
-        android:id="@+id/class_listview"
-        android:layout_gravity="left|bottom"
-        android:footerDividersEnabled="false"
-        tools:listitem="@android:layout/simple_list_item_1"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="15dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Class"
-        android:id="@+id/add_class_button"
+        android:id="@+id/add_button"
         android:layout_gravity="right|bottom"
         android:layout_marginBottom="15dp"
         android:layout_marginRight="125dp" />

@@ -15,34 +15,15 @@
         android:hint="Class CRN"
         android:layout_marginBottom="75dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Your Classes:"
-        android:id="@+id/classes_label"
-        android:layout_gravity="left|top"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="35dp" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="298dp"
-        android:id="@+id/class_listview"
-        android:layout_gravity="center"
-        android:footerDividersEnabled="false"
-        tools:listitem="@android:layout/simple_list_item_1"
-        android:layout_marginBottom="25dp" />
-
     <Button
+        android:id="@+id/add_class_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Class"
-        android:id="@+id/add_class_button"
         android:layout_gravity="left|bottom"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="80dp"
-        android:onClick="addClass" />
+        android:onClick="addClass"
+        android:text="Add Class" />
 
     <Button
         android:layout_width="wrap_content"
@@ -53,5 +34,22 @@
         android:layout_marginBottom="15dp"
         android:layout_marginRight="80dp"
         android:onClick="done" />
+
+    <TextView
+        android:id="@+id/classes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:text="Your Classes:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/class_list_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="65dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </FrameLayout>
