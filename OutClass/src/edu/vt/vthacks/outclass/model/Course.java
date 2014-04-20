@@ -68,7 +68,7 @@ public class Course implements ICourse{
 	public int getCRN() {
 		return cCRN;
 	}
-	/*public ParseObject getParseObjectFromCRN(String objectID)
+	public ParseObject getParseObjectFromCRN(String objectID)
 	{
 		ParseQuery<ParseObject> query = ParseQuery.getQuery("Events");
 		try
@@ -80,6 +80,6 @@ public class Course implements ICourse{
 			System.out.println(e.getMessage());
 		}
 		return null;
-	}*/
-	
+	}
+
 }
