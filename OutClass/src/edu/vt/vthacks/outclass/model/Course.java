@@ -68,18 +68,18 @@ public class Course implements ICourse{
 	public int getCRN() {
 		return cCRN;
 	}
-	public ParseObject getParseObjectFromCRN(String crn)
+	/*public ParseObject getParseObjectFromCRN(String objectID)
 	{
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("Courses");
+		ParseQuery<ParseObject> query = ParseQuery.getQuery("Events");
 		try
 		{
-			query.whereEqualTo("crn", crn);
+			query.whereEqualTo("ObjectID", objectID);
 			return ((ParseObject)query.getFirst());
 		} catch(Exception e)
 		{
 			System.out.println(e.getMessage());
 		}
 		return null;
-	}
+	}*/
 	
 }

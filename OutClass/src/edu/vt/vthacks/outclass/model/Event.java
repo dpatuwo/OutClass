@@ -36,5 +36,9 @@ public class Event {
 		}
 		return events;
 	}
+	public ParseObject getParseObjectFromObjectID(String ID)
+	{
+		
+	}
 
 }
