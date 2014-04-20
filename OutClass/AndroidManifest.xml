@@ -41,12 +41,16 @@
         <activity
             android:name="edu.vt.vthacks.outclass.RegisterActivity"
             android:label="@string/title_activity_test"
-            android:windowSoftInputMode="adjustResize|stateVisible" 
-            >
-             <intent-filter>
-	            <action android:name="android.intent.action.MAIN" />
-	            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.vt.vthacks.outclass.MapView"
+            android:label="@string/title_activity_map_view" >
         </activity>
     </application>
 
