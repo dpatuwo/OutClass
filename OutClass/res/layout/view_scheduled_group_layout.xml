@@ -3,14 +3,12 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="getDetails"
     android:orientation="vertical" >
 
     <ListView
-        android:id="@+id/viewGroups_listView"
+        android:id="@+id/viewScheduledGroups_listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="getDetails" >
+        android:layout_height="match_parent" >
 
     </ListView>
 
