@@ -9,31 +9,34 @@
     tools:context=".MainActivity" >
 
     <Button
+        android:id="@+id/view_schedule_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Scheduled Group"
-        android:id="@+id/view_schedule_button"
         android:layout_below="@+id/create_group_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:onClick="viewScheduledGroup"
+        android:text="View Scheduled Group" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Study Group"
         android:id="@+id/create_group_button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Groups"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="createGroup"
+        android:text="Create Study Group" />
+
+    <Button
         android:id="@+id/your_groups_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/view_schedule_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="yourGroups"
+        android:text="Your Groups" />
 
     <ImageButton
         android:layout_width="70dp"

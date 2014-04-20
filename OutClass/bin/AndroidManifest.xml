@@ -32,10 +32,14 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyC6_VpyxaK8XYgpdhr8EkDb0xUCBALfCmo" />
 
-        <activity android:name="edu.vt.vthacks.outclass.activity_main" />
+        <activity android:name="edu.vt.vthacks.outclass.ActivityMain" />
         <activity android:name="edu.vt.vthacks.outclass.AddClassActivity" />
+        <activity android:name="edu.vt.vthacks.outclass.CreateGroupActivity" />
+        <activity android:name="edu.vt.vthacks.outclass.ScheduledGroupActivity" />
+        <activity android:name="edu.vt.vthacks.outclass.ViewDetails" />
+        <activity android:name="edu.vt.vthacks.outclass.YourGroupsActivity" />
         <activity
-            android:name="edu.vt.vthacks.outclass.TestActivity"
+            android:name="edu.vt.vthacks.outclass.RegisterActivity"
             android:label="@string/title_activity_test"
             android:windowSoftInputMode="adjustResize|stateVisible" 
             >

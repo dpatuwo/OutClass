@@ -10,76 +10,82 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <Spinner
-            android:id="@+id/class_spinner"
+        <TextView
+            android:id="@+id/class_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_margin="10dp" />
-
-        <DatePicker
-            android:id="@+id/datePicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/class_spinner"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:calendarViewShown="false" />
-
-        <TimePicker
-            android:id="@+id/time_timePicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/datePicker"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp" />
+            android:layout_margin="10dp"
+            android:text="Class" />
 
         <TextView
-            android:id="@+id/location_textView"
+            android:id="@+id/date_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_TextView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/time_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date_TextView"
+            android:layout_below="@+id/class_TextView"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/location_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/time_timePicker"
+            android:layout_below="@+id/date_TextView"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:text="Location"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <EditText
-            android:id="@+id/location_editText"
+        <TextView
+            android:id="@+id/location_details_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/time_timePicker"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/location_textView"
+            android:layout_below="@+id/time_TextView"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/location_TextView"
             android:ems="10"
-            android:inputType="textPostalAddress" />
+            android:inputType="textPostalAddress"
+            android:text="TextView" />
 
         <TextView
-            android:id="@+id/description_textView"
+            android:id="@+id/description_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/location_editText"
+            android:layout_below="@+id/location_details_TextView"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:text="Description"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <EditText
-            android:id="@+id/description_editText"
+        <TextView
+            android:id="@+id/description_details_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/description_textView"
+            android:layout_below="@+id/description_TextView"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:text="Description" />
+
+        <TextView>
+        </TextView>
     </RelativeLayout>
 
 </ScrollView>
