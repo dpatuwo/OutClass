@@ -1,19 +1,17 @@
 package edu.vt.vthacks.outclass;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.widget.EditText;
-import android.view.View;
 import android.content.Intent;
-import com.parse.Parse;
-import android.app.Activity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class ScheduledGroupActivity extends Activity
 {

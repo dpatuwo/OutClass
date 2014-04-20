@@ -24,11 +24,12 @@ public final class R {
         public static final int class_spinner=0x7f070015;
         public static final int classes_label=0x7f070012;
         public static final int container=0x7f070007;
+        public static final int create_button=0x7f07001b;
         public static final int create_group_button=0x7f070001;
         public static final int crn_edittext=0x7f07000f;
         public static final int datePicker=0x7f070016;
         public static final int description_editText=0x7f07001c;
-        public static final int description_textView=0x7f07001b;
+        public static final int description_textView=0x7f07001a;
         public static final int done_button=0x7f070011;
         public static final int email=0x7f07000b;
         public static final int help_button=0x7f070004;
@@ -44,7 +45,6 @@ public final class R {
         public static final int scrollView=0x7f070014;
         public static final int settings_button=0x7f070003;
         public static final int sign_in_button=0x7f07000e;
-        public static final int subject_textView=0x7f07001a;
         public static final int textView2=0x7f070021;
         public static final int textView3=0x7f070024;
         public static final int textView4=0x7f070023;

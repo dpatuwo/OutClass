@@ -1,16 +1,16 @@
 package edu.vt.vthacks.outclass.model;
 
+import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 public class Event {
-	public void createEvent(String location, Date date, String description, String course_subj) throws ParseException
+	public void createEvent(String location, String date, String description, String course_subj) throws ParseException
 	{
 		ParseObject event = new ParseObject("Event");
 		event.put("location", location);
@@ -18,7 +18,7 @@ public class Event {
 		event.put("description", description);
 		event.put("course_subj", course_subj);
 		event.save();
-		
+
 	}
 	public List<ParseObject> getCourseEvents(String crn)
 	{
